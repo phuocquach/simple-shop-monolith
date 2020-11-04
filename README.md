@@ -1,5 +1,5 @@
-# MS-Service (Mine.Shop.Service)
-A small service for a small shop, using Asp.Net Core 3.x, which focusing on learning and practicing C#, .Net and the ecosystem on .Net.
+# Simple-Shop Application
+A small-simple shop, base on .Net Core, use MVC, API, Identity and Vue for admin site 
 
 ## Status Check
 ![Build And Test](https://github.com/phuocquach/mine-shop-service/workflows/.github/workflows/build_image.yml/badge.svg)
