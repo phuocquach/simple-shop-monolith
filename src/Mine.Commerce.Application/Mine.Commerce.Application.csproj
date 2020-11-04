@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mine.Commerce.Domain\Mine.Commerce.Domain.csproj"/>
+    <ProjectReference Include="..\Mine.Commerce.Infrastructure\Mine.Commerce.Infrastructure.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Orders\Queries\"/>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS mine-service-test
+
+WORKDIR /src
+COPY . .
+WORKDIR /src/src
+RUN dotnet restore "./Mine.Commerce.Service.sln"
+
+FROM mine-service-test
+WORKDIR /app
+COPY /.github/tests/start-test.sh start-test.sh
+
+RUN chmod +x "start-test.sh"
+
+ENTRYPOINT ["/app/start-test.sh"]

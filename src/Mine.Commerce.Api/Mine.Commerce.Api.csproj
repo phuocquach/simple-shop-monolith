@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aa39862b-74d7-4749-938d-4906d9d80636</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Mine.eCommere.Api' " />
+  <ItemGroup>
+    <ProjectReference Include="..\Mine.Commerce.Application\Mine.Commerce.Application.csproj" />
+    <ProjectReference Include="..\Mine.Commerce.Infrastructure\Mine.Commerce.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SeedData\BrandsData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cert\Sd3540.pfx" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+</Project>
